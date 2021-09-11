@@ -29,6 +29,9 @@ namespace MyFirstGitApp
             Summ(firstNumber, secondNumber);
             Diff(firstNumber, secondNumber);
             Mod(firstNumber, secondNumber);
+            Comp(firstNumber, secondNumber);
+            Priv(firstNumber, secondNumber);
+
         }
         public static void Summ(double firstNumber, double secondNumber)
         {
@@ -46,6 +49,17 @@ namespace MyFirstGitApp
         {
             double result = ((double)Math.Abs(firstNumber) + (double)Math.Abs(secondNumber)) / 2;
             Console.WriteLine("Среднее арифметическое их модулей: " + result);
+        }
+
+        public static void Comp(double firstNumber, double secondNumber)
+        {
+            double result = firstNumber * secondNumber;
+            Console.WriteLine("Произведение этих числел: " + result);
+        }
+        public static void Priv(double firstNumber, double secondNumber)
+        {
+            double result = firstNumber / secondNumber;
+            Console.WriteLine("Частное этих числел: " + result);
         }
     }
 }
